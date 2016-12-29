@@ -25,6 +25,7 @@ app.controller('eventController', function ($scope, $state) {
   };
 
   $scope.viewEvent = function (eventID) {
+
     $state.go('app.event_view', {id: $scope.id, eventID: eventID});
   };
 
